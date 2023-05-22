@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Membership</title>
+    <script>
+        function validate()
+        {
+            var uid=document.forms["mem"]["user"].value;
+            var cn=document.mem.cardnum.value;
+            var op=document.mem.opay.value;
+            var flag=1;
+            if(uid.indexOf(" ")>=0)
+            {
+                alert("User Id should not contain space");
+                flag=0;
+            }
+            if(cn.length==0 && op=="")
+            {
+                alert("Please enter credit card number or choose a different payment method ");
+                flag=0;
+            }
+            if(cn.length>0 && cn.length<16)
+            {
+                alert("Enter a valid credit card number");
+                flag=0;
+            }
+            if(flag==1)
+            {
+                document.write("Payment successful !");
+            }
+        }
+    </script>
+</head>
+<body style="margin-top: 20%;">
+    <style>
+        body {background:linear-gradient(to right, #A89166, #df9ec4);}
+     </style>
+    
+</style>
+    <center>
+    <div >
+        <form name="mem">
+            <label>User ID :</label>
+            <input type="text" name="user" required><br><br>
+            <label>Credit Card number : </label>
+            <input type="text" name="cardnum"><br>
+            <p>Other Payment method : </p>
+            <input type="radio" name="opay">
+            <label>Gpay</label><br>
+            <input type="radio" name="opay">
+            <label>Internet Banking</label><br>
+            <input type="radio" name="opay">
+            <label>Paytm</label><br>
+            <input type="submit" value="Pay" onclick="validate()">&nbsp;&nbsp;
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</center>
+</body>
