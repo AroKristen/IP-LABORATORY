@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <users>
   <user id="1">
-    <Title>Keyboard</Title>
+    <Title>kKeyboard</Title>
     <variant>classical</variant>
     <Ratings>9.2</Ratings>
   </user>
@@ -10,23 +10,23 @@
     <variant>classical</variant>
     <Ratings>9.2</Ratings>
   </user>
-  </user>
+  
   <user id="3">
        <Title>flute</Title>
     <variant>western</variant>
     <Ratings>9.2</Ratings>
   </user>
-  </user>
+  
   <user id="4">
         <Title>tabla</Title>
     <variant>classical</variant>
     <Ratings>9.2</Ratings>
   </user>
-  </user>
+  
   <user id="5">
         <Title>drums</Title>
     <variant>western</variant>
     <Ratings>9.2</Ratings>
   </user>
-  </user>
+
 </users>
